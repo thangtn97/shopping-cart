@@ -1,4 +1,6 @@
 .Products {
-
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1fr);
+  justify-content: center;
 }

@@ -3,11 +3,21 @@ import styles from "./Product.module.css";
 const product = (props) => {
   return (
     <div className={styles.Product}>
-      <div>
-        <h2>{props.product.name} </h2>
-        <h2>{props.product.price}</h2>
+      <div
+        style={{ backgroundImage: `url(${props.product.image})` }}
+        className={styles.Image}
+      >
+        <span
+          className={styles.Content}
+          onClick={() => props.clicked(props.product)}
+        >
+          Add To Cart
+        </span>
       </div>
-      <span onClick={() => props.clicked(props.product)}>Add To Cart</span>
+      <div className={styles.Info}>
+        <p>{props.product.name} </p>
+        <p>{props.product.price}</p>
+      </div>
     </div>
   );
 };

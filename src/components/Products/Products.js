@@ -19,7 +19,6 @@ class Products extends React.Component {
     const productLine = this.props.match.params.linkUrl;
     let products = null;
     if (this.props.products[productLine]) {
-      this.props.products[productLine].map((i) => console.log(i));
       products = this.props.products[productLine].map((product) => {
         return (
           <Product

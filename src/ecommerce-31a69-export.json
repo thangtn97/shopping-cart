@@ -1,0 +1,42 @@
+{
+  "products": {
+    "hats": [
+      {
+        "id": "hat1",
+        "img": "http://www.ooshirts.com/products/3/catalog.jpg",
+        "name": "Gildan Long Sleeve T-Shirt",
+        "price": 2
+      },
+      {
+        "id": "1",
+        "img": "http://www.ooshirts.com/products/37/catalog.jpg",
+        "name": "Hanes Long-Sleeve Beefy-T",
+        "price": 2
+      },
+      {
+        "id": "2",
+        "image": "http://www.ooshirts.com/products/38/catalog.jpg",
+        "name": "Hanes Long Sleeve Tagless",
+        "price": 2
+      },
+      {
+        "id": "3",
+        "image": "http://www.ooshirts.com/products/39/catalog.jpg",
+        "name": "Jerzees 50/50 Long Sleeve",
+        "price": 2
+      },
+      {
+        "id": "4",
+        "image": "http://www.ooshirts.com/products/40/catalog.jpg",
+        "name": "Jerzees Long Sleeve T",
+        "price": 2
+      },
+      {
+        "id": "6",
+        "image": "http://www.ooshirts.com/products/41/catalog.jpg",
+        "name": "Champion Long Sleeve T",
+        "price": 2
+      }
+    ]
+  }
+}
