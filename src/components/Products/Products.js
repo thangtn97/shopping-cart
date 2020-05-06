@@ -5,12 +5,15 @@ import * as actions from "../../store/actions/index";
 import styles from "./Products.module.css";
 
 class Products extends React.Component {
-  //  state = {
-  //    products: {},
-  //  };
-
   componentDidMount() {
     this.props.onFetchProducts();
+  }
+  shouldComponentUpdate(nextProps, nextState) {
+    if (nextProps.products === this.props.products) {
+      return false;
+    } else {
+      return true;
+    }
   }
   render() {
     const productLine = this.props.match.params.linkUrl;
