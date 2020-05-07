@@ -1,0 +1,14 @@
+.CartItem {
+  width: 100%;
+  border: 1px black solid;
+  display: flex;
+  justify-content: space-between;
+}
+.Desc {
+  flex-grow: 0.5;
+  display: flex;
+}
+.Image {
+  width: 100px;
+  height: 150px;
+}

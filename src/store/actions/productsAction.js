@@ -1,5 +1,6 @@
 import axios from "axios";
-export const fetchProducts = () => {
+import * as actionTypes from "./actionTypes";
+export const initProducts = () => {
   return (dispatch) => {
     axios
       .get("https://ecommerce-31a69.firebaseio.com/products.json")
@@ -9,7 +10,7 @@ export const fetchProducts = () => {
 
 export const fetchProductsSuccess = (products) => {
   return {
-    type: "FETCH_PRODUCTS_SUCCESS",
+    type: actionTypes.FETCH_PRODUCTS_SUCCESS,
     products: products,
   };
 };

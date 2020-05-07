@@ -6,7 +6,7 @@ import styles from "./Products.module.css";
 
 class Products extends React.Component {
   componentDidMount() {
-    this.props.onFetchProducts();
+    this.props.onInitProducts();
   }
   shouldComponentUpdate(nextProps, nextState) {
     if (nextProps.products === this.props.products) {
@@ -37,7 +37,7 @@ class Products extends React.Component {
 const mapDispatchToProps = (dispatch) => {
   return {
     onAddToCart: (product) => dispatch(actions.addToCart(product)),
-    onFetchProducts: () => dispatch(actions.fetchProducts()),
+    onInitProducts: () => dispatch(actions.initProducts()),
   };
 };
 const mapStateToProps = (state) => {
